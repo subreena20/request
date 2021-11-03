@@ -1,0 +1,1252 @@
+{
+    "course": {
+        "id": "114",
+        "name": "Functions",
+        "logo": "https://raw.githubusercontent.com/navgurukul/newton/master/functions/assets/function_defn_inst_1.png",
+        "notes": null,
+        "days_to_complete": null,
+        "short_description": "Iss topic mai hum functions ke bare mai janege",
+        "type": "html",
+        "course_type": null,
+        "lang_available": [
+            "en"
+        ],
+        "exercises": [
+            {
+                "id": "4074",
+                "parent_exercise_id": null,
+                "course_id": "114",
+                "name": "Functions",
+                "slug": "functions__functions-intro_md",
+                "sequence_num": 0,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/functions-intro.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Basics of Functions\n\nFunction ek block of `code` hota hai jo ki run hota hai jab hum use call karte hai. Function mei hum data pass kar sekhte hai jise hum parameter kahete hai. Function data return karta hai. Functions ka use kar ke hum ek baar kuch `code` likh kar usko bahot baar use kar sakte hai. Isse humara kaam bahot aasan ho jata hai.\n\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "print (\"NavGurukul\")\n\ndef say_hello():\n    print (\"Hello!\")\n    print (\"Aap kaise ho?\")\n\nsay_hello()\nprint (\"Python is awesome\")\nsay_hello()\nprint (\"Hello\u2026\")\nsay_hello()",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "Isko chala ke dekho. Iski `output` kuch aisi aayegi:\n\n\n\n```\nNavGurukul\nHello!\nAap kaise ho?\nPython is awesome\nHello!\nAap kaise ho?\nHello\u2026\nHello!\nAap kaise ho?\n```\nDhayn se dekho ki `code` mein jahan bhi `say_hello()` likha hai, wahan `Hello!` aur `Aap kaise ho?` waali lines print ho gayi hain. Yeh isliye hua hai kyunki humne ek baar doosri line mein `def say_hello()` ka use kar ke ek function likh diya. Ab jab bhi yeh function call hoga toh iske andar waala `code` chal jayega. Iss tareeke se hum baar baar ek `code` ko user kar sakte hain.\n\n\n\nIntroduction to Functions\n\nFunctions ka use karke hum kuch `code` ek baar likh ke usse baar baar wahi kaam karva sakte hain. Aap abhi tak bahot functions ka use kar chuke ho. Iss `code` ko padho:\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "names_list = [\"Fiza\", \"Shivam\", \"Imtiyaz\", \"Deepanshu\", \"Rahman\"]\nprint (len(names_list))",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "`Ouput:-`\n\n\n\n`5`\n\n\n\nYahan `len(names_list)` ka use kar ke humne jana ki list mein kitne item hai. Ab hum apne `code` mein `len` ka use kar kisi bhi list ke items ki ginti kar sakte hain. Yahan `len` ek function hai. Functions ke bina humein list ki items ki ginti nikalne ke liye baar baar `code` likhna padega. Isko behtar samajhne hum aage wale examples mein iska `code` khud likhenge.\n\n\n\nHum ek function likhenge. Iss `code` ko pehle chala ke dekho, aur fir neeche padiye iske baare mein samajhne ke liye.\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def definition_say_hello():\n    print (\"NavGurukul\")\n    print (\"NavGurukul mei humein apni learning ki responsibility leni padti hai.\")\n\ndefinition_say_hello()\n\nprint (\"NavGurukul mei hum sab logo ko ek tarah se treat karte hai.\")\n\ndefinition_say_hello()",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n\n\n```\nNavGurukul\n\nNavGurukul mei humein apni learning ki responsibility leni padti hai.\n\nNavGurukul mei hum sab logo ko ek tarah se treat karte hai.\n\nNavGurukul\n\nNavGurukul mei humein apni learning ki responsibility leni padti hai.\n```\nEk aur example FUNCTIONS samajhne ke liye. Iss `code` ko padh ke `output` socho. Chala ke dekhne ke baad dhyan se padho.\n\n\n\n1. Shuruat mein `def` ka use kar ke hum `python` ko bata rahe ki humne ek `definition_say_hello` naam ka function likha hai.\n\n\n"
+                    },
+                    {
+                        "type": "image",
+                        "value": {
+                            "url": "https://merakilearn.s3.ap-south-1.amazonaws.com/course_images/functions/assets/function_defn_inst_1.png",
+                            "text": ""
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "` ke neeche likha hua hai. Inn spaces se `python` samajh jata hai ki yeh function ka `code` hai.\n\n"
+                    },
+                    {
+                        "type": "image",
+                        "value": {
+                            "url": "https://merakilearn.s3.ap-south-1.amazonaws.com/course_images/functions/assets/function_defn_inst_2.png",
+                            "text": ""
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "3. Fir agli line, `definition_say_hello()` mein humne function ko bulaya hai jisse function ke andar wala `code` chal jata hai. Isko **FUNCTION CALL** karna kehte hain.\n\n\n"
+                    },
+                    {
+                        "type": "image",
+                        "value": {
+                            "url": "https://merakilearn.s3.ap-south-1.amazonaws.com/course_images/functions/assets/function_defn_inst_3.png",
+                            "text": ""
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "5. Aakhir mein humne firse `definition_say_hello()` likh ke function call ki hai. Ek aur baar function ek baar andar wale `code` ko chala deti hai. Isse andar waali jo function ke andar `code` hai - yaani - *2 print* command chal jati hai.\n\n\n"
+                    },
+                    {
+                        "type": "image",
+                        "value": {
+                            "url": "https://merakilearn.s3.ap-south-1.amazonaws.com/course_images/functions/assets/function_defn_inst_5.png",
+                            "text": ""
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "`python`\ndef function_say_bye():\n    print (\"Aapko mil ke maza aaya. \")\n    print (\"Bye bye\")\nfunction_say_bye()\nfunction_say_bye()\nprint (\"`Python` ka istamaal bahot jagah hota hai.\")\nfunction_say_bye()\nfunction_say_bye()\n\n```\n**Output :-**\n\n```\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "Aapko mil ke maza aaya. \nBye bye\nAapko mil ke maza aaya. \nBye bye\nPython ka istamaal bahot jagah hota hai.\nAapko mil ke maza aaya. \nBye bye\nAapko mil ke maza aaya. \nBye bye",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "1. Hum `python` mein `def` `key`word ka use kar ke function banate hain. `def` ke baad function ka naam, `function_say_bye` likha hain. Naam ke baad hum do bracket `(` `)` lagate hain.\n\n2. Bracket ke baad ek colon, `:` lagate hain. `Python` semicolon se samajh jaati hai ki function ka `code` shuru ho raha hai.\n\n3. Dekhiye ki sara function ka `code` indent (space) deke likha hua hai. Isse `python` ko samajh aata hai ki yeh function ke andar ka `code` hai.\n\n4. `print (\"Bye bye\")` ke baad `code` space diye bina likha hua hai. Isse `python` ko samajh aati hai ki function ka `code` kahatam ho gaya hai\n\n5. functions ko bhi `variables` ko naam dene ke rules ke hisaab se hi naam dete hain. yaad rakhne ke liye ek baar `variables` ko naam dene ke rules yaad rakh li jiye.\n\n\n\nFunction Call ko samajhna\n\nNeeche diye gaye `code` ko likhiye aur dekhiye ki iska koi `output` aa raha hai ya nahi. Nahi aa raha toh kyun nahi aa rahi?\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def definition_hello_again():\n    print (\"Firse Hello :)\")\n    print (\"Aap kaise ho?\")",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "Ab apne `code` mein yeh line add karein aur dekhein ki koi `output` aati hai.\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "definition_hello_again()",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "Firse Hello :)\nAap kaise ho?",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "`Python` mein sirf function likh dene se function ka `code` chalta nahi hai. Yahan pehle humne def `key`word ka use karke `python` ko function ka `code` bataya. Isko **\"FUNCTION DEFINITION\"** kehte hain.\n\n\n\nFir humne baad mein `definition_hello_again()` likh ke function ko bulaya aur usme likha hua `code` chalwaya. Isko **\"FUNCTION CALL\"** karna kehte hain. **\"FUNCTION CALL\"** mein hum function ke naam ke baad 2 bracket `(` `)` lagate hain. Isse `python` ko pata chalta hai ki function ke andar ka `code` chalana hai.\n\n\n\n"
+                    },
+                    {
+                        "type": "youtube",
+                        "value": "https://www.youtube.com/watch?v=WkC7ktXM_8k"
+                    },
+                    {
+                        "type": "youtube",
+                        "value": "https://youtu.be/AJJpGImQWLc"
+                    }
+                ]
+            },
+            {
+                "id": "4072",
+                "parent_exercise_id": null,
+                "course_id": "114",
+                "name": "Question 1",
+                "slug": "functions__functions-question1_md",
+                "sequence_num": 100,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/functions-question1.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 1\n\nQuestion 1 (Part 1)\n\n`ask_question` naam ka Ek function likhiye jo yeh text ko \"ek baar\" print kare.\n\n\n\n```\nWho is the founder of Facebook?\n\n- Mark Zuckerberg\n- Bill Gates\n- Steve Jobs\n- Larry Page\n```\nFir iss function ko 5 baar call kar ke yeh text 5 baar print karvao.\n\n\n\nQuestion 1 (Part 2)\n\nFir while `loop` ka use kar ke iss function ko 100 baar call karne ka `code` likho.\n\n\n\n\nDono parts ka `code` ek hi `file` mein likh ke `upload` karo!\n\n"
+                    }
+                ]
+            },
+            {
+                "id": "4073",
+                "parent_exercise_id": null,
+                "course_id": "114",
+                "name": "Pre-defined Functions Questions",
+                "slug": "functions__Questions_md",
+                "sequence_num": 200,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/Questions.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Pre-defined Functions Questions\n\nAb aapko kuchh questions solve krna hai pre-define function ka use kr ke.\n\n\n\n\n**Q1 .**  Aapko `max` function ka use krke di hue list me se sbse bada value print krvani hai.\n\n\n\n\n`Input`\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "numbers = [3, 5, 7, 34, 2, 89, 2, 5]",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n89\n\n\n\n\n**Q2.**  Aapko `sum` function ka use krke di hue list ke element ka sum  print krvana hai.\n\n\n\n`Input`\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "numbers = [1, 2, 3, 4, 5]",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n15\n\n\n\n\n**Q3.** Aapko `sort` function ka use kr ke di hue list ko sort krna hai.\n\n\n\n`Input:-`\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "unorder_list = [6, 8, 4, 3, 9, 56, 0, 34, 7, 15]",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n\n\n`unorder_list = [0, 3, 4, 6, 7, 8, 9, 15, 34, 56]`\n\n\n\n\n**Q4.** `reverse` function ka use kr ke aapko di hue list ka revrse print krna hai.\n\n\n\n`Input:-`\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "reverse_list = [\"Z\", \"A\", \"A\", \"B\", \"E\", \"M\", \"A\", \"R\", \"D\"]",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n\n\n`reverse_list = [\"D\", \"R\", \"A\", \"M\", \"E\", \"B\", \"A\", \"A\", \"Z\"]`\n\n\n\n\n**Q5.** Aapko `min` function ka use krke di hue list me se sbse chhoti value print krvani hai.\n\n\n\n`Input:-`\n\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "list = [8, 6, 4, 8, 4, 50, 2, 7]",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n\n\n2\n\n"
+                    }
+                ]
+            },
+            {
+                "id": "4076",
+                "parent_exercise_id": null,
+                "course_id": "114",
+                "name": "Debug the Code",
+                "slug": "functions__DebugCode_md",
+                "sequence_num": 300,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/DebugCode.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Debug `Code`\n\nAb hum function se related `code` ko debug karenge.\n\n\n\n**Question 1**\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def sum()\n    print(12+13)\nsum()",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**Question 2**\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "daf welcome():\n    print(\"Welcome to function\")\nwelcome()",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**Question 3**\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "\nisEven()\n\ndef isEven():\n    if(12%2==0):\n        print(\"Even Number\")\n    else:\n        print(\"Old Number\")",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "4075",
+                "parent_exercise_id": null,
+                "course_id": "114",
+                "name": "Function Arguments",
+                "slug": "functions__functions-args_md",
+                "sequence_num": 400,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/functions-args.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "What are function arguments?\n\nAbhi tak humne jo bhi functions `code` kare hain, unme kuch bahot simple print `statements` hain. Hum aise functions bhi likh sakte hain jo kuch data leke uss data ke saath kuch karte hain. Iss `code` ko chala ke dekho.\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "numbers_list = [1, 2, 3, 4, 5, 6, 7, 10, -2]\nprint (max(numbers_list))",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n`10`\n\n\n\nYahan humne `max` function ko `numbers_list` di aur usne usme se sabse badi value hume de di. \n\n\n\n**max** function, `python` ka ek pre-defined function hai jise hum use kar sakte hai aur iske liye hume def max( ) likh kar usme `code` likhne ki koi jarurat nahi hai kyuki `python` banane wale ne humare liye ye kaam pehle hi kar diya hai.\n\n\n\nAise hi len function bhi ek list leke hume list mein items ki ginti deta hai.\n\n\n\nlen( ) function ka use hum kisi array ya sequence ki length find karne ke liye karte hai.Yeh  bhi `python` mai pre-define function hai.\n\n\n\n`Example :-`\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "\na=[1,2,3,4,5,6]\nprint(len(a))",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n6\n\n\n\nNeeche diye gaye `code` ko chala ke dekho aur ek baar socho ki kya ho raha hai.\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def say_hello(name):\n    print (\"Hello \", name)\n    print (\"Aap kaise ho?\")\nsay_hello(\"Aatif\")",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n\n\n```\nHello , Aatif\nAap kaise ho?\n```\nYahan humne function ko ussi tareeke se define kiya hai jaise pichle examples mein kiya tha. Lekin dhyan se dekho toh `def say_hello` ke baad brackets mein humne `name` likha hai aur, aur neeche ek `name` `variable` ko print command ke saath use kar rahe hain. Yahan name ko *parameter* kehte hain jiski value hum function call karne ke time de sakte hain. Aakhri line mein function call karte vakt humne brackets ke andar `\"Aatif\"` likha hai. Function call karte vakt hum jo parameters ko value dete hain, unko arguments kehte hain.\n\n\n\nToh basically humne iss example mein yeh kiya aur seekha:\n\n\n\n* `say_hello` naam ka ek function define kiya jo ek `name` naam ka parameter leta hai aur uska use kar ke kuch print karta hai\n\n* fir humne function call kiya aur function call karne ke time ek argument diya jiski value \"Aatif\" thi\n\n* jab yeh function call hota hai toh jo humne `string` \"Aatif\" argument diya hai. Yahan uski value name parameter mein jaati hai aur. Jab yeh value\n\n* `name` parameter mein jaati hai, toh woh function ke andar same naam ke `variable` mein use kar sakte hain. Humne iss `variable` ka naam use kar ke print command likhi hai.\n\n\n\n**Note: Yeh thoda sa mushkil concept, agar bahot ache se samajh nahi aaya, toh ek aur baar padh ke aur dusre examples dekh ke zaroor samajh aa jayega ;-)**\n\n\n\nMultiple Function Arguments\n\nAbhi tak humne ek function argument ke saath hi `code` likha hai. Ab hum thode aur function arguments ke saath `code` likhte hain.\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def add_numbers(number1, number2):\n    print (\"Main do numbers ko add karunga.\")\n    print (number1 + number2)\nadd_numbers(120, 50)\nnum_x = 134\nname = \"Rinki\"\nadd_numbers(num_x, name)",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n\n\n```\nMain do numbers ko add karunga.\n170\nMain do numbers ko add karunga.\n\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n```\nYahan humne ek `add_numbers` naam ka function define kara hai. Lekin dekho ki bracket mein humne 2 parameter likhe hain. Ek sa jyada argument lene ke liye arguments ke baad comma laga dete hain Humne add_numbers(120, 50) likh ke function call karte samay do `integer` parameter diye hai. Yahan parameters ka kram / order important hai. Iss function call mein yeh hota \n\n\n\n* `120` ki value *pehle parameter* `number1` mein jaati hai jo ki function ke andar same naam ke `variable` number1 mein hai\n\n* `50` ki value *dusre parameter* `number2` mein jaati hai jo ki function ke andar same naam ke `variable` number2 mein hai\n\n* Baad mein humne do `variable` define kare hain, `num_x` and `num_y` aur fir add_numbers ko num_x aur num_y arguments deke call kiya hai. Yahan bhi:\n\n* `num_x` ki value `134` pehle parameter `number1` mein jaati hai aur `num_y` ki value `Rinki` dusre parameter `number2` mein jaati hai.\n\n\n\nAur ache se samajhne ke liye ek aur example dekhte hain.\n\n\n\n\nJese ki apne dekha ki **`output`** mai **Type`Error`** aa rahi kuki hum kabhi bhi `string` aur `integer` concate nahi kar sakte hai.Humne num_1 mai **`integer`** store kiya aur name mai **`string`** store kiya hai.\n\n\n\n\n```\ndef say_hello_language(name, language):\n    if language == \"hindi\":\n        print (\"Namaste \", name)\n        print (\"Aap kaise ho?\")\n    elif language == \"punjabi\":\n        print (\"Sat sri akaal \", name)\n        print (\"Tuhada ki haal hai?\")\n    else:\n        print (\"Hello \", name)\n        print (\"How are you?\")\nsay_hello_language(\"Rishabh\", \"punjabi\")\nsay_hello_language(\"Armaan\", \"english\")\nsay_hello_language(\"Abhishek\", \"french\")\nsay_hello_language(\"Kavay\", \"hindi\")\n```\n**`Output` :-**\n\n\n\n```\nSat sri akaal  Rishabh\nTuhada ki haal hai?\nHello  Armaan\nHow are you?\nHello  Abhishek\nHow are you?\nNamaste  Kavay\nAap kaise ho?\n```\nYeh function do parameter leta hai, `name` aur `language` aur aise kaam karta hai:\n\n\n\n* Agar `language` `\"hindi\"` di hai, toh hindi mein kuch print karega\n\n* Agar `language` `\"punjabi\"` di hai, toh punjabi mein kuch print karega\n\n* Agar `\"hindi\"` aur `\"punjabi\"` ke ilava koi bhi language di hai toh english mein karega\n\n\n\nYeh karne ke liye humne ek function define kiya jo do arguments leta hai, `name` aur `language`. Hum jab `say_hello_language(\"Rishabh\", \"punjabi\")` call karte hain toh yeh hota hai:\n\n\n\n* Pehle parameter, `name` mein \"Rishabh\" `string` jata hai aur dusre parameter, `language` mein punjabi jaata hai.\n\n* Fir humara program if-elif-else ka use kar ke dekhta hai language ki value kya hai aur uske hisaab se sahi language mein print kar deta ha\n\n* Isi tareeke se upar likhi hui saari function calls mein yeh hi hota hai\n\n\n\n\nEk aur example\n\nChalane se pehle isko padh ke `output` ko sochne ki koshish karo. Fir chala ke dekho ki aapne sahi `output` sochi thi ya nahi.\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def say_hello_people(name_x, name_y, name_z, name_a):\n    print (\"Namaste \", name_x) # hindi mein\n    print (\"Alah hafiz \", name_y) # urdu mein\n    print (\"Bonjour \", name_z) # french mein\n    print (\"Hello \", name_a) # english mein\nsay_hello_people(\"Imitiyaz\", \"Rishabh\", \"Rahul\", \"Vidya\")\nsay_hello_people(\"Steve\", \"Saswata\", \"Shakrundin\", \"Rajeev\")",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n\n\n```\nNamaste  Imitiyaz\nAlah hafiz  Rishabh\nBonjour  Rahul\nHello  Vidya\nNamaste  Steve\nAlah hafiz  Saswata\nBonjour  Shakrundin\nHello  Rajeev\n```\nIss function mein dekho ki yeh 4 argument leta hai, `name_x`, `name_y`, `name_z`, `name_a`. `def` waali pehli line mein humne 4 parameter ka naam comma (`,`) laga laga ke likhe hain. Function call karte samay jis kram / order mein humne parameters likhe hain def waali line mein, wahi kram / order mein arguments ki value parameters mein jaati hai.\n\n\n\n`say_hello_people(\"Imitiyaz\", \"Rishabh\", \"Rahul\", \"Vidya\")` mein parameters ki value iss hisaab se jaati hain:\n\n\n\n* `\"Imtiyaz\"` ki value pehle parameter `name_x` mein jaati hai\n\n* `\"Rishabh\"` ki value dusre parameter `name_y` mein jaati hai\n\n* `\"Rahul\"` ki value teesre parameter `name_z` mein jaati hai\n\n* `\"Vidya\"` ki value teesre parameter `name_a` mein jaati hai\n\n\n\n`Python` Arbitrary Arguments\n\nArbitrary arguments hum `tab` use karte hai jab hume pata nahi hota hai ki hume kitne no. of arguments function mai dene hai. Hum arbitrary arguments ke sath function of define karne ke liye parameter se pehle ( * ) ka use karte hai jai ki neeche dikhaya gaya hai.\n\n\n\n`Example:-`\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def icecream(*flavours):\n for flavour in flavours:\n  print(\"i love\"+flavour)\n\nicecream(\"chocolate\", \"butterscotch\",\"vanilla\",\"strawberry\")",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n\n\n```\ni love chocolate\ni love butterscotch\ni love vanilla\ni love strawberry \n```\nDefault parameter value\n\nDefault parameter value se yaha humara ye matlab hai ki hum function ko define karte time kisi parameter ko value assign kar dete hai taaki hum function ko bina kisi argument ke call kare to vo default value ko le le.\n\n\n\n`Example :-`\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def attendance(name,status=\"absent\"):\n    print(name,\"is\",status,\" today\")\n\nattendance(\"kartik\",\"present\")\nattendance(\"sonu\")\nattendance(\"vishal\",\"present\")\nattendance(\"umesh\")",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n```\nkartik is present today\nsonu is absent today\nvishal is present today\nUmesh is absent today\n```\n"
+                    }
+                ]
+            },
+            {
+                "id": "4077",
+                "parent_exercise_id": null,
+                "course_id": "114",
+                "name": "Debug the Code",
+                "slug": "functions__CodeDebug_md",
+                "sequence_num": 500,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/CodeDebug.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Debug `Code`\n\nAb hum function se related `code` ko debug karenge.\n\n\n\n**Question 1**\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def greet(names):\n    for name in names:\n        print(\"Welcome\", name)\n\n\ngreet(\"Rinki\", \"Vishal\", \"Kartik\", \"Bijender\")",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**Question 2**\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def info(name, age = ):\n   print(name + \" is \" + age + \" years old\")\n\ninfo(\"Sonu\")\ninfo(\"Sana\", \"17\")\ninfo(\"Umesh\", \"18\")",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**Question 3**\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "\ndef studentDetails(name,currentMilestone,mentorName):\n    print(\"Hello \" , name, \"your\" , currentMilestone, \"concept \" , \"is clear with the help of \", mentorName)\n\n\nstudentDetails(\"Nilam\",\"loop\")",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "4080",
+                "parent_exercise_id": null,
+                "course_id": "114",
+                "name": "Question 2",
+                "slug": "functions__functions-question2_md",
+                "sequence_num": 600,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/functions-question2.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 2\n\n`function_print_lines` naam ka ek function likho jo 2 `strings` leta ho, aur unko neeche diye hue dhang se print karta ho.\n\n\n\nJaise agar hum usko `\"Mera naam Rishabh hai.\"` aur `\"Main NavGurukul ka co-Founder hun.\"` denge toh woh yeh print karega\n\n\n\n```\nMera naam Rishabh hai.\nMain NavGurukul ka co-founder hun.\n```\n"
+                    }
+                ]
+            },
+            {
+                "id": "4078",
+                "parent_exercise_id": null,
+                "course_id": "114",
+                "name": "Question 3",
+                "slug": "functions__Question2_md",
+                "sequence_num": 700,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/Question2.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 3\n\nQuestion 3 (Part 1)\n\nApko students naam ka ek function define karna hai or uss function mai  list of students name as a parameter pass karna hai(List ka use nahi karna hai)\n\n\n\n\nQuestion 3 (Part 2)\n\nApko isGreaterThen20 naam ka function define karna hai jismai apko function mai do parameter pass karane hai or first parameter by default 20 hi hona chahiye.\n\n"
+                    }
+                ]
+            },
+            {
+                "id": "4083",
+                "parent_exercise_id": null,
+                "course_id": "114",
+                "name": "Question 4",
+                "slug": "functions__functions-question3_md",
+                "sequence_num": 800,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/functions-question3.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 4\n\nYeh question 2 parts mein hai. Dono pa\u0005rts ka `code` same `file` mein likh ke submit karein.\n\n\n\nQuestion (Part 1)\n\n`add_numbers` naam ka function likhiye jo do numbers ko arguments ke tarah le aur fir unka sum print karta hai. Arguments ka naam `number1` aur `number2` hona chaiye.\n\n\n\n\n`Input :-`\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "num1 = 56\nnum2 = 12\nadd_numbers(num1,num2)",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n68\n\n\n\n\nQuestion (Part 2)\n\n`add_numbers_list` naam ka function likhiye jo do `integers` ki 2 lists leta ho aur fir same position wale `integers` ka sum print karta ho.\n\n\n\nSame position waale 2 `integers` ka sum karne ke liye Part 1 mein di gayi add_numbers waale function ka use karo.\n\n\n\nJaise agar hum iss function ko [50, 60, 10] aur [10, 20, 13] denge ko woh yeh print karega\n\n\n\n```\n60\n---------------\n80\n---------------\n23\n---------------\n```\n"
+                    }
+                ]
+            },
+            {
+                "id": "4079",
+                "parent_exercise_id": null,
+                "course_id": "114",
+                "name": "Question 5",
+                "slug": "functions__functions-question4_md",
+                "sequence_num": 900,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/functions-question4.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 5\n\nYeh question 2 parts mein hai. Dono pa\u0005rts ka `code` same `file` mein likh ke submit karein.\n\n\n\nQuestion (Part 1)\n\n`check_numbers` naam ka ek function likhiye jo do numbers le aur fir print kare \"Dono even hain\" agar dono numbers even (2 se divide hote hain) nahi toh print kare \"Dono numbers even nahi hai\"\n\n\n\n\n\nQuestion (Part 2)\n\nAb ek `check_numbers_list` naam ka ek function likho jo inetgers ki list ko arguments ki tarah le aur fir check kare ki same index waale dono `integers` even hain ya nahi.\n\n\n\nYeh check karne ke liye pichle `Part 1` mein likhe `check_numbers` function ka use karo.\n\n\n\nAgar aapne apne function ko `[2, 6, 18, 10, 3, 75]` aur `[6, 19, 24, 12, 3, 87]` Toh usko yeh `output` deni chaiye:\n\n\n\n```\ndono even hain\n---------------\ndono even nahi hai\n---------------\ndono even hain\n---------------\ndono even hain\n---------------\ndono even nahi hain\n---------------\ndono even nahi hain\n```\n"
+                    }
+                ]
+            },
+            {
+                "id": "4084",
+                "parent_exercise_id": null,
+                "course_id": "114",
+                "name": "Return Values",
+                "slug": "functions__functions-return_values_md",
+                "sequence_num": 1000,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/functions-return_values.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "How to return a value from a function?\n\nKuch functions jo humne use kare hain, vapas kuch value dete hain. Matlab kuch data vapas dete hain. Abhi tak humne aise functions likhe hain jo kuch bhi vapas nahi dete. \n\n\n\nEk simple addition ka function likhte hain jo data vapas deta hai.\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def add_numbers(number_x, number_y):\n    number_sum = number_x + number_y\n    return number_sum\n\nsum1 = add_numbers(20, 40)\nprint (sum1)\nsum2 = add_numbers(560, 23)\na = 1234\nb = 12\nsum3 = add_numbers(a, b)\nprint (sum2)\nprint (sum3)\nnumber_a = add_numbers(20, 40) / add_numbers(5, 1)\nprint (number_a)",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output`**\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "60\n583\n1246\n10.0",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "* Yahan humne function ussi tareeke se define kara hai jaise hum abhi tak functions ko define karte aaye hain. Lekin sirf function mein last line aap kuch naya dekhoge.\n\n* Last line mein humne `return` `statement` ka use kar ke function ko yeh bataya hai ki voh `number_sum` ki value ko vapas karega\n\n* Kyunki yeh function `number_sum` ki value vapas kar raha hai, hum iss value ko ek `variable` mein aasani se daal sakte hain.\n\n* Jaise humne neeche waali lines mein `sum1` `variable` mein `20` aur `40` ke sum ki value, 60 daal di hai\n\n* Humne **function definition** ki last line mein `return` ka use kar ke ek value vapas karvai hai function se. Hum isko return `statement` bolte hain. `Return` ka matlab hi vapas dena hota hai\n\n* Jo functions kuch values return karte hain, hum unn functions ke saath kaafi interesting kaam kar sakte hain jaise `number_a = add_numbers(20,40) / add_numbers(5,1)` waali line ko dekho. Yahan humne ek `statement` mein do add_numbers ko call kiya hai aur fir unn dono ka jo result mila (pehle ka 60 aur dusre ka 6) usko divide kar diya hai Yeh functions jo kuch return karte hain, hum unka use aise kisi `statement` mein kar sakte hain. Jaise humne division wali line mein kara hai.\n\n\n\nHum same function ko return value ke bina likhte hain.\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def add_numbers_print(number_x, number_y):\n    number_sum = number_x + number_y\n    print (number_sum)\nsum4 = add_numbers_print(4, 5)\nprint (sum4)\nprint (type(sum4))",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "9\nNone\n<class 'NoneType'>",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "Humne yahan same upar wale function ka `code` likha hai, lekin return `statement` ka use nahi kiya. Iss vajah se hume yeh function kuch return nahi karega Kyunki yeh function kuch return nahi karta hai, hum apne numbers ke sum ko dusre `variable` mein nahi daal sakte jaise humne pichle example mein kiya tha.\n\n\n\nYahan agar aap `sum4` ki value dekhoge toh woh `None` dikhayega. `None` ka matlab hota hai kuch nahi. Basically jo numbers value nahi return karte woh \"kuch nahi\" return karte hain `None` `python` mein ek alag tareeke ki type hai `integer`, `float` etc. ki tarah. `print (type(sum4))` waali line mein dekhoge ki woh sum4 ki type ko NoneType dikhayega. Iska matlab hota hai ki isme kuch nahi hai.\n\n\n\n\nEk baar yeh neeche wale `code` ko padho aur socho ki kya hoga,. Ab usko chalao aur dekho ki aapne sahi socha tha\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "number_b = add_numbers_print(5, 4) / add_numbers_print(2, 1)",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-** \n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "TypeError: unsupported operand type(s) for /: 'NoneType' and 'NoneType'",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "Yahan humne basically aise function ki values ko divide karne ki koshish kari hai jo koi value return nahi karta. Humne abhi padha tha ki jo function return nahi karte , woh None (matlab kuch nahi) return karte hain. Jab hum yahan None ko None se divide karte hain toh `python` baukhla jata hai aur samajh nahi pata ki kya karna hai. Iss vajah se `error` return kar deta hai. `Python` hume `error` mein bhi yahi bolta hai:\n\n\n\n**`unsupported operand type(s) for /: 'NoneType' and 'NoneType'`**\n\n\n\nIska matlab yeh hai ki `Python` NoneType ki value ko NoneType ki value se hi divide nahi kar  aur iss chakar mein `error` aa gayi hai.\n\n\n\nUnderstandng function execution with a return `statement`\n\nIss example ko chalane se pehle, iska `code` padh ke socho ki yeh function kya return karega aur kya print karega jab hum isko 2 `integer` argument denge.\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def add_numbers_more(number_x, number_y):\n    number_sum = number_x + number_y\n    print (\"Hello from NavGurukul ;)\")\n    return number_sum\n    number_sum = number_x + number_x\n    print (\"Kya main yahan tak pahunchunga?\")\n    return number_sum\n\nsum6 = add_numbers_more(100, 20)",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "Hello from NavGurukul ;)",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "* Yahan yeh function \"Hello from NavGurukul ;)\" print karega aur 120 ki value return karega. Yeh 120 ki value \"return number_sum\" waali line ka use kar ke return karega.\n\n* `sum6` ki value 120 ho jayegi\n\n* Pehli `return number_sum` waali line se neeche aapne jo bhi `code` likha hai uss `code` mein se kuch bhi nahi chalega. Yeh isliye nahi chalega kyunki function chalate hue jab `python` ko ek return `statement` milti hai, toh `python` uss return `statement` ka use kar ke value return kar deta hai aur fir uske neeche wala koi bhi `code` nahi chalata hai.\n\n\n\nThodi aur depth mein jake mein function execution samajhte hain `python` mein. Pehle iss `code` ko run kare bina samjahne ki try karo. Fir ek baar run kar ke dekho.\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def menu(day):\n    if day == \"monday\":\n        return \"Butter Chicken\"\n    elif day == \"tuesday\":\n        return \"Mutton Chaap\"\n    else:\n        return \"Chole Bhature\"\n\n    print (\"Kya main print ho payungi? :-(\")\n\nmon_menu = menu(\"monday\")\nprint (mon_menu)\ntues_menu = menu(\"tuesday\")\nprint (tues_menu)\nfri_menu = menu(\"friday\")\nprint (fri_menu)",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "Butter Chicken\nMutton Chaap\nChole Bhature",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "Humara `menu` function `day` argument ke hisaab se uss din ki menu ki item ki value return kar deta hai\n\n\n\n* Yahan mon_menu mein \"Butter Chicken\" ki value hogi kyunki humari if-elif-else `statement` yahan dekhti hai ki din \"monday\" diya hua hai toh \"Butter Chicken\" return kar deti hai. Jaise hi `python` ko return `statement` dikhti hai woh \"Butter Chicken\" return kar deti hai aur function chalna banda ho jata hai. Iss vajah se aakhir waali print command nahi chalti. Kyunki uss print command se pehle hi humesha return `statement` ki vajah se function chalna band ho jata hai\n\n* Aise hi jab day ki value \"tuesday\" hoti hai toh return \"Mutton Chaap\" waali return `statement` `execute` ho jati hai\n\n* Aur jab \"monday\" aur \"tuesday\" dono hi nahi hote, toh return \"Chole Bhature\" wali return `statement` `execute` ho jati hai.\n\n* **Lekin kyunki if-elif-else ke andar se hi return `statement` `execute` ho jaati hai, humara program kabhi bhi aakhir wali if `statement` tak pahunchta hi nahi hai aur woh kabhi print nahi hoti.**\n\n\n\nAb hum same function iss dhang se likhenge ki aakhri wali print command bhi run hoye aur `\"Kya main priunt ho payungi? :-(\"` waali line print ho paye :D\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def menu(day):\n    if day == \"monday\":\n        food = \"Butter Chicken\"\n    elif day == \"tuesday\":\n        food = \"Mutton Chaap\"\n    else:\n        food = \"Chole Bhature\"\n    print (\"Kya main print ho payungi? :-(\")\n    return food\n    print (\"Lekin main toh pakka nahi print hounga :'(\")\nprint(menu(\"monday\"))",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "Kya main print ho payungi? :-(\nButter Chicken",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "Yahan humne if-elif-else mein directly return `statement` ka use nahi kiya. Humne ek `food` naam ke `variable` mein woh value store karva li jo humne return karvani thi. Ab Jab if-elif-else chal jata hai, toh humara program uske neeche wali print `statement` pe pahunchta hai. Kyunki `python` ko abhi tak koi return `statement` nahi mili hai, woh print command chalata hai. Print karne ke baad woh return `statement` se *food* `variable` ki value return kar deta hai Lekin jo akhri wali print `statement` hai woh nahi print hoyegi. Kyunki uss print `statement` se pehle return `statement` chal jati hai aur uski vajah se `python` needche walai print `statement` tak pahunchti hi nahi hai\n\n"
+                    }
+                ]
+            },
+            {
+                "id": "4086",
+                "parent_exercise_id": null,
+                "course_id": "114",
+                "name": "Question 6",
+                "slug": "functions__functions-question5_md",
+                "sequence_num": 1100,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/functions-question5.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 6\n\nYeh question 3 parts mein. Teenon parts ka `code` likh ke ek hi `file` mein submit karo.\n\n\n\nQuestion (Part 1)\n\n`calculator` naam ka ek function banao jo teen argument leta ho - `number_x`, `number_y`, `operation`. `number_x` aur `number_y` mein hum humesha do `integers` denge aur operation mein kaunsa operation karna hai woh denge. Jaise:\n\n\n\n* Agar operation mein \"add\" diya toh number_x aur number_y ko add kar ke returna karega.\n\n*  Agar operation mein \"subtract\" diya toh number_x aur number_y ko subtract kar ke return karenge.\n\n*  Agar operation mein \"multiply\" diya toh number_x ko number_y se multiply kar ke returna karega.\n\n*  Agar operation mein \"divide\" diya toh number_x ko number_y se divide kar ke return karega\n\n\n\nNeeche kuch function calls ke examples diye hue hain:\n\n\n\n* `calculator(20, 25, \"add\")` call karne pe 45 returna karega. 45 hume 20+25 karne se milega.\n\n* `calculator(40, 3, \"subtract\")` call karne pe 37 return karega. 37 hume 40-3 karne se milega.\n\n* `calculator(10, 4, \"multiply\")` call karne pe 40 return karega. 40 hume 10*4 karne se milega.\n\n* `calculator(40, 4, \"divide\")` call karnse pe 10 return karega. 10 hume 40/3 karne se milega.\n\n\n\nFunction likhne ke baad, yeh kaam karne ke liye function call karo aur `variable` mein value daalo.\n\n\n\n* 24 aur 20 ko add karo aur number_1 `variable` mein value daalo\n\n* 50 aur 60 ko multiply karo aur number_2 `variable` mein value daalo\n\n* 80 aur 120 ko divide karo aur number_3 `variable` mein value daalo\n\n* 90 aur 23 ko subtract karo aur number_4 `variable` mein value daalo\n\n\n\n\nQuestion (Part 2)\n\nAb `input` ka use kar ke user se 2 numbers `input` lo.\n\n\n\n**Note: Yeh karne ke liye koi function banane ki zaroorat nahi hai.**\n\n\n\nFir calculator function ko 4 baar call call kar ke inn dono numbers do add, subtract, multiply, divide karo aur result ko 4 alag `variables` mein daalo. Woh `variables` ka naam yeh hoga:\n\n\n\n* *add_result* add operation ka result store karega\n\n* *subtract_result* subtract operation ka result store karega\n\n* *multiply_result* multiple operation ka result store karega\n\n* *divide_result* divide operation ka result store karega\n\n\n\nFir upar wale chaaron `variables` ko print karo.\n\n\n\n\nFinal `code` ko submit karo :)\n\n\n\nQuestion (Part 2)\n\n`list_change` naam ka ek function ka `code` likho jo 2 lists jisme `integers` arguments ki tarah le aur fir unn lists ki woh items jo same index number (kram) pe hain unko multiply kar ke ek nayi list return karvaye.\n\n\n\n**Aapko multiply karne ke liye *calculator* function ka use karna hai. Normal tareeke se multiply nahi kar sakte ho.**\n\n\n\nJaise agar hum function ko aise call karenge toh:\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "multiple_list = list_change([5, 10, 50, 20], [2, 20, 3, 5])",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "Yahan *multiple_list* ki yeh value honi chaiye:\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "[10, 200, 150, 100]",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "10, 5 aur 2 ko multiple kar ke aaya, 200 10 aur 20 ko multiple kar ke, 150 50 aur 3 ko, 100 20 aur 5 ko.\n\n"
+                    }
+                ]
+            },
+            {
+                "id": "4089",
+                "parent_exercise_id": null,
+                "course_id": "114",
+                "name": "Inner Function",
+                "slug": "functions__innerFunction_md",
+                "sequence_num": 1200,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/innerFunction.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "`Python` Inner Functions\n\nEk function jo ki kisi dusre function ke andar likha jaata hai ya define kiya jaata hai use inner function ya nested function kehte hai. Inner functions, outer function ke scope ke `variables`\nKo access kar sakta hai lekin unn `variables` ko change nahi kar sakta hai.\n\n\n\n\n**EXAMPLE:-**\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def f1():\n   s = \"I Love Navgurukul\"\n   def f2():\n       print(s)\n   f2()\n\nf1()",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**`Output` :-**\n\n\n\n```\nI Love Navgurukul\n```\nUpar diye gaye example mein, f2() inner function hai aur f1()outer function. s f1()  ka scope `variable` hai.\n\n\n\n    \nScope of `variable` in nested function\n\nAisi jagah jaha hum koi `variable` find kar sake aur jarurat hone par hum use access bhi kar sake uss jagah ko `variable` scope kehte hain.\nHumne ye padh liya hai ki hum kaise ek function ke andar global `variable` ko access kar sakte hain, lekin, hum outerFunction ke andar wale `variable` ko kaise access karenge ? chaliye Example dekhte hain:\n\n\n\n**Example :-**\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def first_function():\n    s = 'I love India'\n    def second_function():\n        print(s)     \n    second_function()\nfirst_function()",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "`OUTPUT:- `\n\n```\nI love India\n```\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def first_function():\n    s = 'I love India'\n    def second_function():\n        s = \"MY NAME IS JACK\"\n            print(s)     \n    second_function()\n    print(s)    \n \nfirst_function()",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "`OUTPUT:-`\n\n\n\n```\nMY NAME IS JACK\n\nI love India\n```\n"
+                    }
+                ]
+            },
+            {
+                "id": "4085",
+                "parent_exercise_id": "4085",
+                "course_id": "114",
+                "name": "Questions",
+                "slug": "functions__Questions/intro_md",
+                "sequence_num": 1300,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/Questions/intro.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Ab hum function se related kuch questions karege. Jo hume dictionary ki better understand mai help karega.\n\n"
+                    }
+                ]
+            },
+            {
+                "id": "4095",
+                "parent_exercise_id": "4085",
+                "course_id": "114",
+                "name": "Question 1",
+                "slug": "functions__Questions/question1_md",
+                "sequence_num": 1301,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/Questions/question1.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 1\n\neligible_for_vote name ka function likho jo ki user ko bataye ki vo (he/she) vote de sakta hai ya nahi.\n( Consider minimum age of voting to be 18. )\n\n\n\n\n***Example:-***\n\n\n\nAgar user `input` me 18 se kam deta hai to ***\u201cnot eligible \u201c***\nprint kare aur agar user 18 ya 18 se jyaada `input` kare to \n***\u201cyou are eligible\u201d***\nprint kare.\n\n\n\n\n\n`Input:- `\n\n\n\n```\n18\n16\n```\n**`Output` :-**\n\n\n\n```\n\u201cyou are eligible\u201d\n\u201cnot eligible\u201d\n```\n"
+                    }
+                ]
+            },
+            {
+                "id": "4096",
+                "parent_exercise_id": "4085",
+                "course_id": "114",
+                "name": "Question 2",
+                "slug": "functions__Questions/question2_md",
+                "sequence_num": 1302,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/Questions/question2.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 2\n\nEk perfect() naam ka function define kijiye jo ki ek parameter lega aur uss parameter ko hume check karana hai ki vo perfect number hain ya nahi. Iske baad uss function ko use karke ek program likhiye jo ki 1 se 1000 tak sabhi perfect numbers ko print kare.[ hum ek aise `integer` number ko perfect number kahenge jo ki uske sabhi factors ( including 1 & excluding itself) ka sum uss number ke barabar hota hai. \n\n\n\n`Example:-`\n\n\n\n```\n 6 ek perfect number hai 6=1+2+3.\n```\n`Expected Output :- `\n\n\n\n```\n6,28,496\n```\n"
+                    }
+                ]
+            },
+            {
+                "id": "4097",
+                "parent_exercise_id": "4085",
+                "course_id": "114",
+                "name": "Question 3",
+                "slug": "functions__Questions/question3_md",
+                "sequence_num": 1303,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/Questions/question3.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 3\n\n3. Ek function banaiye jo 3 numbers ka sum aur average print kare.Hum user se 3 number `input` karwayenge aur fir unn 3 numbers ka sum aur average print karwayenge jaisa ki niche `output` diya hua hain.\n\n\n\n`Input:-` \n\n\n\n```\nenter first number :-3\n\nEnter second number :-4\n\nEnter third number:-5    \n```\n**`Output` :-**\n\n\n\n```\nSum of three numbers :-12\nAverage of three numbers :-4\n```\n"
+                    }
+                ]
+            },
+            {
+                "id": "4098",
+                "parent_exercise_id": "4085",
+                "course_id": "114",
+                "name": "Question 4",
+                "slug": "functions__Questions/question4_md",
+                "sequence_num": 1304,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/Questions/question4.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 4\n\nEk showNumbers() naam ka function define kijiye jo ki ek limit naam ka parameter lega aur 0 se limit tak ke beech ke sabhi even aur odd numbers ko label ke saath print karega jaisa ki niche dikhaya gaya hai.\n\n\n\n\n\n***For example :-*** \n\n\n\n`Input:-` \n\n\n\n```\n3\n```\n**`Output` :-**\n\n\n\n```\n0 EVEN\n1 ODD\n2 EVEN\n3 ODD\n```\n"
+                    }
+                ]
+            },
+            {
+                "id": "4099",
+                "parent_exercise_id": "4085",
+                "course_id": "114",
+                "name": "Question 5",
+                "slug": "functions__Questions/question5_md",
+                "sequence_num": 1305,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/Questions/question5.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 5\n\nEk function likhiye jo ki ek limit naam ka parameter lega aur 0 se limit tak ke beech ke number jo ki 3 aur 5 ke multiples hain unka sum print karega.jaisa ki niche dikhaya gya hai. \n\n\n\n\n\n`Input:-` \n\n\n\n```\n10\n```\n3 aur 5 ke multiples => 3, 5, 6, 9, 10\n\n\n\n**`Output` :-**\n\n\n\n```\n33\n```\n"
+                    }
+                ]
+            },
+            {
+                "id": "4100",
+                "parent_exercise_id": "4085",
+                "course_id": "114",
+                "name": "Question 6",
+                "slug": "functions__Questions/question6_md",
+                "sequence_num": 1306,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/Questions/question6.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 6\n\nEk function define kijiye jo ki drivers ki speed check karega. Aur ye function speed naam ka ek parameter lega.\n\n\n\n1. Agar speed 70 se kam hai to ye \u201cok\u201d print karega.\n\n\n2. Agar driver ki speed 70 se jyaada hai to function use har 5 km ke liye 1 point dega (ye 70 ko count nahi karega).\n\n`example ke liye agar speed 80 hai to print karega \u201cpoints:2\u201d` .\n\n\n3. Agar driver ko 12 points se jyaada points milte hai to , function  \u201cLicense suspended\u201d print karega.\n\n\n\n\n`Input:-` \n\n\n\n```\n85\n135\n```\n**`Output` :-**\n\n\n\n```\n3\n\u201cLicense suspended\u201d\n```\n"
+                    }
+                ]
+            },
+            {
+                "id": "4101",
+                "parent_exercise_id": "4085",
+                "course_id": "114",
+                "name": "Question 7",
+                "slug": "functions__Questions/question7_md",
+                "sequence_num": 1307,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/Questions/question7.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 7\n\nEk function define karo jo ki `input` me 2 `strings` lega aur dono `strings` me se jiski length jyaada hogi use print karega aur agar dono `strings` ki length equal hui to dono ko line by line print karega .  Hint :- use len() builtin function.. \n\n\n\n\n\n\n\n`Input:-` \n\n\n\n```\nfunction_name(\u201chello\u201d,\u201dwelcome\u201d)\nfunction_name(\u201csonu\u201d,\u201dmonu\u201d)\n```\n**`Output` :-**\n\n\n\n```\nwelcome\n\nsonu\nmonu\n```\n"
+                    }
+                ]
+            },
+            {
+                "id": "4102",
+                "parent_exercise_id": "4085",
+                "course_id": "114",
+                "name": "Question 8",
+                "slug": "functions__Questions/question8_md",
+                "sequence_num": 1308,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/Questions/question8.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 8\n\nEk function likho jo ki ek \nargument le jo number ho or dictionary return karega jisme `keys` 1 se lekar argument ke number tak hogi aur values unke squares honge.jaisa ki niche dikhaya gaya hai.\n\n\n\n\n`Input :-`\n20\n\n\n\n**`Output` :-**\n\n\n\n\n```\n{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100, 11: 121, 12: 144, 13: 169, 14: 196, 15: 225, 16: 256, 17: 289, 18: 324, 19: 361, 20: 400}\n```\n"
+                    }
+                ]
+            },
+            {
+                "id": "4088",
+                "parent_exercise_id": "4088",
+                "course_id": "114",
+                "name": "Code Output",
+                "slug": "functions__OutputOfCode/intro_md",
+                "sequence_num": 1400,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/OutputOfCode/intro.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "`Code` `Output`\n\nAb hum function se related kuch questions karege. Jo hume function ki better understand mai help karega.\n\n"
+                    }
+                ]
+            },
+            {
+                "id": "4103",
+                "parent_exercise_id": "4088",
+                "course_id": "114",
+                "name": "Question 1",
+                "slug": "functions__OutputOfCode/question1_md",
+                "sequence_num": 1401,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/OutputOfCode/question1.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 1\n\nNiche diye gye `code` snippet ki `output` kya hogi?\n\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def employee(name,salary=20000):\n        print(name,\"your salary is:-\",salary)\n\nemployee(\"kartik\",30000)\nemployee(\"deepak\")",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "4104",
+                "parent_exercise_id": "4088",
+                "course_id": "114",
+                "name": "Question 2",
+                "slug": "functions__OutputOfCode/question2_md",
+                "sequence_num": 1402,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/OutputOfCode/question2.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 2\n\nNiche diye gye `code` snippet ki `output` kya hogi?\n\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def primeorNot(num):     \n    if num > 1:\n        for i in range(2,num):\n            if (num % i) == 0:\n                print(num,\"is not a prime number\")\n                print(i,\"times\",num//i,\"is\",num)\n                break\n            else:\n                print(num,\"is a prime number\")\n\n    else:\n           print(num,\"is not a prime number\")\nprimeorNot(406)",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "4105",
+                "parent_exercise_id": "4088",
+                "course_id": "114",
+                "name": "Question 3",
+                "slug": "functions__OutputOfCode/question3_md",
+                "sequence_num": 1403,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/OutputOfCode/question3.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 3\n\nNiche diye gye `code` snippet ki `output` kya hoga?\n\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "\ndef greet(*names):\n    for name in names:\n               print(\"Hello\", name)\ngreet(\"sonu\", \"kartik\", \"umesh\", \"bijender\")\n",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "4106",
+                "parent_exercise_id": "4088",
+                "course_id": "114",
+                "name": "Question 4",
+                "slug": "functions__OutputOfCode/question4_md",
+                "sequence_num": 1404,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/OutputOfCode/question4.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 4\n\nNiche diye gye `code` snippet ki `output` kya hoga?\n\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def sumofdigits(number):\n    sum = 0\n    modulus = 0\n    while number!=0 :\n        modulus = number%10\n        sum+=modulus\n        number/=10\n    return sum\n\nprint(sumofdigits(123))\n",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "4107",
+                "parent_exercise_id": "4088",
+                "course_id": "114",
+                "name": "Question 5",
+                "slug": "functions__OutputOfCode/question5_md",
+                "sequence_num": 1405,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/OutputOfCode/question5.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 5\n\nNiche diye gye `code` snippet ki `output` kya hogi?\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def  meal(day,time):\n    if day==\"sunday\":\n        if time==\"breakfast\":\n            return \"dosa\"\n        elif time==\"lunch\":\n            return \"dal rice\"\n        elif time==\"dinner\":\n            return \"paneer and  chapati\"\n        else :\n            return \"time not found\"\n    elif day==\"monday\":\n        if time==\"breakfast\":\n            return \"fried rice\"\n        elif time==\"lunch\":\n            return \"aloo rice\"\n        elif time==\"dinner\":\n            return \"chhole bhature\"\n        else :\n            return \"time not found\"\n    elif day==\"other\":\n        if time==\"breakfast\":\n            return \"aloo\"\n        elif time==\"lunch\":\n            return \"rajma rice\"\n        elif time==\"dinner\"    :\n            return \"veg-chapati\"\n        else :\n            return \"time not found\"\n            \nprint(meal(\"sunday\",\"lunch\"))\nprint(meal(\"monday\",\"dinner\"))",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "4081",
+                "parent_exercise_id": "4081",
+                "course_id": "114",
+                "name": "Debug the Code",
+                "slug": "functions__DebugCode/intro_md",
+                "sequence_num": 1500,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/DebugCode/intro.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Debug `Code`\n\nAb hum function se related `code` ko debug karenge.\n\n"
+                    }
+                ]
+            },
+            {
+                "id": "4090",
+                "parent_exercise_id": "4081",
+                "course_id": "114",
+                "name": "Question 1",
+                "slug": "functions__DebugCode/question1_md",
+                "sequence_num": 1501,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/DebugCode/question1.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 1\n\nNeeche diye huye `codes` mai kuch bugs hai. Ab aapko `error` find kar ke unhe solve karne hai.(number of bugs)\n\n\n\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def calculate_sum(a,b):\n    sum = a+b\n    print(sum)\nsum(4,5)\n",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "4091",
+                "parent_exercise_id": "4081",
+                "course_id": "114",
+                "name": "Question 2",
+                "slug": "functions__DebugCode/question2_md",
+                "sequence_num": 1502,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/DebugCode/question2.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 2\n\nNeeche diye huye `codes` mai kuch bugs hai. Ab aapko `error` find kar ke unhe solve karne hai.(number of bugs)\n\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "function multi(a,b):\n    multiply=a*b\n    return multiply\nprint(multi(3,4))",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "4092",
+                "parent_exercise_id": "4081",
+                "course_id": "114",
+                "name": "Question 3",
+                "slug": "functions__DebugCode/question3_md",
+                "sequence_num": 1503,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/DebugCode/question3.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 3\n\nNeeche diye huye `codes` mai kuch bugs hai. Ab aapko `error` find kar ke unhe solve karne hai.(number of bugs)\n\n\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "\nDef Avg(number1,number2,number3):\n    avg=number1+number2+number3/3\n    print(sum)\nAvg(1,3,2)\n",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "4093",
+                "parent_exercise_id": "4081",
+                "course_id": "114",
+                "name": "Question 4",
+                "slug": "functions__DebugCode/question4_md",
+                "sequence_num": 1504,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/DebugCode/question4.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 4\n\nNeeche diye huye `codes` mai kuch bugs hai. Ab aapko `error` find kar ke unhe solve karne hai.(number of bugs)\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def voter(age):\nif age < 18:\n    print(\"eligible\")\nelse:\n    print(\"not eligible\")\n    voter(20)\n",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "4094",
+                "parent_exercise_id": "4081",
+                "course_id": "114",
+                "name": "Question 5",
+                "slug": "functions__DebugCode/question5_md",
+                "sequence_num": 1505,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/DebugCode/question5.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Question 5\n\nNeeche diye huye `codes` mai kuch bugs hai. Ab aapko `error` find kar ke unhe solve karne hai.(number of bugs)\n\n\n\n"
+                    },
+                    {
+                        "type": "python",
+                        "value": {
+                            "code": "def distance(kms):\n        if kms < 20:\n            print(\"close\")\n        elif kms < 50:\n            print(median)\n        else:\n            Print(far)\n    distance(20,30)",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "4087",
+                "parent_exercise_id": "4087",
+                "course_id": "114",
+                "name": "Becoming  A Programmer",
+                "slug": "functions__BonusTask/intro_md",
+                "sequence_num": 1600,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/BonusTask/intro.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Becoming A Programmer\n\nIss Task mai apko function ke bare mai six new concepts padne hai.\n\n\n\nPhele apko function ke three new concepts `python` ki website se padna hai.\n\n\n\n- https://docs.`python`.org/3/tutorial/controlflow.html#defining-functions\n\n\n\nFir aap function ke three new concepts **Stackoverflow** se padh hai.\n\n\n\n\nApp ek google doc par apni understand likh kar apne mentor se share karenge aur concepts se related kuch questions bhi karenge.\n\n\n\nApp ek class lenge jisme apne jo new concepts sikhe hai woh explain karenge.\n\n"
+                    }
+                ]
+            },
+            {
+                "id": "4082",
+                "parent_exercise_id": "4082",
+                "course_id": "114",
+                "name": "Interview Questions",
+                "slug": "functions__InterviewQuestions/intro_md",
+                "sequence_num": 1700,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/functions/InterviewQuestions/intro.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Interview Questions\n\n1- What is the difference between a parameter and an argument?\n\n\n\n2- All functions in `Python` by default return \u2026?\n\n\n\n3- What are `key`word arguments and when should we use them?\n\n\n\n4- How can we make a parameter of a function optional?\n\n\n\n5- What happens when we prefix a parameter with an asterisk (*)?\n\n\n\n6- What about two asterisks (**)?\n\n\n\n7- What is the scope?\n\n\n\n8- What is the difference between local and global `variables`?\n\n\n\n9- Why is using the global `statement` a bad practice?\n\n"
+                    }
+                ]
+            }
+        ]
+    }
+}
